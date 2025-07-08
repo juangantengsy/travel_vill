@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healing & Villa Booking</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar transparent">
+    <div class="logo">HealingVilla</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+       <li><a href="healing.html">Healing</a></li>
+        <li><a href="#villa">Villa</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero home-hero" style="background-image: url('https://i.pinimg.com/736x/18/be/1f/18be1f7af1db345172b4096613fef6a2.jpg');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>TRAVEL</h1>
+      <p>Temukan tempat healing terbaik & villa impianmu</p>
+      <button class="btn-book" onclick="openPopup()">Booking Now</button>
+    </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://i.pinimg.com/736x/ea/c7/c1/eac7c1708973e9e156f8a1241b9bf985.jpg" alt="Slide 1"><div class="slide-caption">Hidden Beach</div></div>
+        <div class="swiper-slide"><img src="https://i.pinimg.com/736x/0c/f3/af/0cf3af171a534a416dee1359fb1d5946.jpg" alt="Slide 2"><div class="slide-caption">Island Cave</div></div>
+        <div class="swiper-slide"><img src="https://i.pinimg.com/736x/01/b9/ef/01b9ef22e9f3c0bd11c6df4b1a3f1ccb.jpg" alt="Slide 3"><div class="slide-caption">Jungle Retreat</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- khusus foto scetion melengkung -->
+ <section class="healing-curved">
+  <div class="healing-box">
+    <div class="healing-curved-image image-left" style="background-image: url('https://i.pinimg.com/736x/a1/06/c7/a106c7e0256afac9d2e4295c42bf0163.jpg');"></div>
+    <div class="healing-content">
+      <h2>Hotel Bintang 5</h2>
+      <p>Menyatu dengan alam, rasakan ketenangan sejati di area hutan alami yang masih terjaga keasriannya.</p>
+      <a href="https://youtube.com" target="_blank">Lihat Suasana</a>
+    </div>
+  </div>
+
+  <div class="healing-box reverse">
+    <div class="healing-curved-image image-right" style="background-image: url('https://i.pinimg.com/736x/b0/62/41/b062412e647b8e944ad01720c0ab304e.jpg');"></div>
+    <div class="healing-content">
+      <h2>Raja Ampat</h2>
+      <p>Suasana syahdu, angin lembut, dan obak tenang cocok untuk relaksasi jiwa.</p>
+      <a href="https://www.google.com/travel/hotels/s/x69bDreYb6rVjB778" target="_blank">Lihat Suasana</a>
+    </div>
+  </div>
+</section>
+
+  <section id="villa" class="section">
+    <h2>Luxury Villas</h2>
+    <div class="card-container">
+      <div class="card"><img src="https://i.pinimg.com/736x/96/df/b0/96dfb083f5b2bc79ad5a9587a9aeb209.jpg" /><p>Tropical Villa</p></div>
+      <div class="card"><img src="https://i.pinimg.com/736x/32/13/b8/3213b800724bb293b847eae07334db6a.jpg" /><p>Beachfront Villa</p></div>
+      <div class="card"><img src="https://i.pinimg.com/736x/20/e6/a0/20e6a0378cdb425133273c41dbb6787b.jpg" /><p>Mountain View Villa</p></div>
+    </div>
+  </section>
+  <!-- foto kenangan -->
+  <section class="galeri-kenangan">
+  <h2>Kenangan Terbaik dari Pelanggan</h2>
+  
+  <div class="kenangan-item">
+    <img src="https://i.pinimg.com/736x/e0/69/a8/e069a85253642c066700b5dddeac3f98.jpg" alt="Kenangan 1">
+    <div class="kenangan-text">
+      <h3>@nadiatravel</h3>
+      <p>“Suasana yang menenangkan... tempat ini seperti surga tersembunyi. Terima kasih sudah memberikan pengalaman healing terbaik.”</p>
+     </div>
+  </div>
+
+  <div class="kenangan-item reverse">
+    <img src="https://i.pinimg.com/736x/c5/99/52/c599528364f340212dfd795c6ee055e9.jpg" alt="Kenangan 2">
+    <div class="kenangan-text">
+      <h3>@ramdhani_journey</h3>
+      <p>“Villa-nya cozy, pemandangan luar biasa, dan staff super ramah. Nggak nyangka se-relax ini!”</p>
+    </div>
+  </div>
+
+  <div class="kenangan-item">
+    <img src="https://i.pinimg.com/736x/68/35/d6/6835d6e266daa0c302123dca8e3f60c2.jpg" alt="Kenangan 3">
+    <div class="kenangan-text">
+      <h3>@elisaholiday</h3>
+      <p>“Setiap sudut villa instagramable! Healing sambil foto-foto, perfect banget buat liburan tenang.”</p>
+    </div>
+  </div>
+</section>
+
+
+ 
+  <!-- Popup Booking Form -->
+  <div class="popup" id="popupForm">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Form Pemesanan</h2>
+      <form action="https://wa.me/6287874166765" target="_blank">
+        <input type="text" placeholder="Nama Lengkap" required>
+        <input type="date" placeholder="Tanggal Check-in" required>
+        <input type="number" placeholder="Jumlah Orang" required>
+        <textarea placeholder="Pesan tambahan..."></textarea>
+        <button type="submit">Kirim ke WhatsApp</button>
+      </form>
+
+<select required>
+  <option value="">-- Pilih Villa/Healing --</option>
+  <option value="Tropical Villa">Tropical Villa</option>
+  <option value="Beachfront Villa">Beachfront Villa</option>
+  <option value="Mountain Retreat">Mountain Retreat</option>
+  <option value="Forest Therapy">Forest Therapy</option>
+</select>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 2.5 }
+      }
+    });
+  </script>
+
+    <!-- Section Gallery Showcase -->
+<section class="home-gallery">
+  <h2>Destinasi Favorit</h2>
+  <div class="gallery-grid">
+    <div class="gallery-card">
+      <img src="https://i.pinimg.com/736x/14/ed/b3/14edb30457dbb8a85be0a11569ff6df0.jpg" alt="Villa 1">
+      <div class="gallery-info">
+        <h3>Villa Ubud</h3>
+        <p>Dikelilingi sawah, cocok untuk relaksasi dan retreat.</p>
+      </div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://i.pinimg.com/736x/21/f5/71/21f571579df9f7aeda51a04c3f5e3c74.jpg" alt="Villa 2">
+      <div class="gallery-info">
+        <h3>Beach View</h3>
+        <p>Pemandangan laut dari balkon pribadi Anda.</p>
+      </div>
+    </div>
+    <div class="gallery-card">
+      <img src="https://i.pinimg.com/736x/54/86/61/5486615d441065af661242a6da476241.jpg" alt="Healing Spot">
+      <div class="gallery-info">
+        <h3>Healing Forest</h3>
+        <p>Tenangkan diri di tengah hutan alami yang damai.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="video-section">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="healing.mp4/24216-340670744_medium.mp4" type="video/mp4" />
+    Browser Anda tidak mendukung video.
+  </video>
+  <div class="video-overlay">
+    <h2>Siap Healing Hari Ini?</h2>
+  <p>Pesan sekarang dan rasakan ketenangan alami bersama kami.</p>
+  <a href="https://wa.me/6287874166765?text=Halo%20Villa%20Healing%2C%20saya%20ingin%20melakukan%20booking.%20Mohon%20info%20ketersediaan%20tempatnya%20%F0%9F%99%8F" 
+     target="_blank" 
+     class="booking-btn">
+     Booking Now via WhatsApp
+  </a>
+</section>
+
+   
+
+
+   
+   <!-- Section Tambahan Home -->
+<section class="home-section">
+  <h2>Kenapa Memilih Kami?</h2>
+  <p>Temukan tempat healing dan villa terbaik dengan pengalaman premium, lokasi eksotis, dan pelayanan terbaik untuk liburan Anda yang tak terlupakan.</p>
+</section>
+
+<section class="home-section">
+  <h2>Fasilitas Unggulan</h2>
+  <p>Kami menyediakan berbagai fasilitas seperti private pool, pemandangan laut, spot yoga, spa alami, dan paket honeymoon untuk pengalaman terbaik Anda.</p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-columns">
+    <div>
+      <h3>Tentang Kami</h3>
+      <p>Kami adalah platform booking tempat healing dan villa terbaik dengan pemandangan eksotis dan layanan terbaik.</p>
+    </div>
+    <div>
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="healing.html">Healing</a></li>
+        <li><a href="villa.html">Villa</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Berlangganan</h4>
+      <p>Dapatkan promo dan info terbaru langsung ke email Anda</p>
+      <input type="email" placeholder="Masukkan email Anda">
+      <button>Kirim</button>
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-google"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copy">
+    &copy; 2025 Healing & Villa. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
